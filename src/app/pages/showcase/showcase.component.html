@@ -4,6 +4,17 @@
       <a
         class="project-link"
         routerLink="."
+        fragment="portfolioProject"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="linkActiveOptions"
+        (click)="scroll(portfolioProject)"
+        >Portfolio Project</a
+      >
+    </li>
+    <li>
+      <a
+        class="project-link"
+        routerLink="."
         fragment="devOpsProject"
         routerLinkActive="active"
         [routerLinkActiveOptions]="linkActiveOptions"
@@ -15,27 +26,96 @@
       <a
         class="project-link"
         routerLink="."
-        fragment="NodeREDProject"
+        fragment="cloudComputingProject"
         routerLinkActive="active"
         [routerLinkActiveOptions]="linkActiveOptions"
-        (click)="scroll(NodeREDProject)"
-        >Node-RED Project</a
+        (click)="scroll(cloudComputingProject)"
+        >Cloud Computing Project</a
       >
     </li>
     <li>
       <a
         class="project-link"
         routerLink="."
-        fragment="project3"
+        fragment="dataAnalysisProject"
         routerLinkActive="active"
         [routerLinkActiveOptions]="linkActiveOptions"
-        (click)="scroll(project3)"
-        >Project 3</a
+        (click)="scroll(dataAnalysisProject)"
+        >Data Analysis Project</a
+      >
+    </li>
+    <li>
+      <a
+        class="project-link"
+        routerLink="."
+        fragment="adminSiteProject"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="linkActiveOptions"
+        (click)="scroll(adminSiteProject)"
+        >Admin Website Project</a
+      >
+    </li>
+    <li>
+      <a
+        class="project-link"
+        routerLink="."
+        fragment="unitTestProject"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="linkActiveOptions"
+        (click)="scroll(unitTestProject)"
+        >Unit Test Project</a
       >
     </li>
   </ul>
 </div>
 <div class="split right">
+  <h4 #portfolioProject class="text-primary">Portfolio Project</h4>
+  <table class="table table-hover">
+    <tr class="table-active">
+      <th scope="col" colspan="4" style="text-align: center">
+        Project Overview
+      </th>
+    </tr>
+    <tbody>
+      <tr>
+        <th scope="row">Background</th>
+        <td>
+          This is my project to build a portfolio website for myself.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Estimate Effort</th>
+        <td>14 person day</td>
+      </tr>
+      <tr>
+        <th scope="row">Technologies</th>
+        <td>
+          <p>Angular (due to my personal preference)</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Tools Used</th>
+        <td>
+          <ul>
+            <li>Visual Studio</li>
+            <li>Github</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Source code</th>
+        <td>
+          <a href="https://github.com/ThiHuongNguyen/portfolio-page" target="_blank">Go to Github</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Final Product</th>
+        <td><a href="https://thihuongnguyen.github.io">This website</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br />
   <h4 #devOpsProject class="text-primary">DevOps Project</h4>
   <table class="table table-hover">
     <tr class="table-active">
@@ -45,15 +125,19 @@
     </tr>
     <tbody>
       <tr>
-        <th scope="row">Adward</th>
-        <td colspan="3"><i>Best project of the course</i></td>
-      </tr>
-      <tr>
         <th scope="row">Background</th>
         <td colspan="3">
           This is a project under the subject: "Enterprise Systems DevOps
           Project" in my master's course.
         </td>
+      </tr>
+      <tr>
+        <th scope="row">Adward</th>
+        <td colspan="">
+          <i class="text-warning">Best project of the course</i>
+        </td>
+        <th scope="row">Grade</th>
+        <td colspan="">High Distinction</td>
       </tr>
       <tr>
         <th scope="row">Project Objectives</th>
@@ -240,7 +324,7 @@
   </ul>
 
   <br />
-  <h4 #NodeREDProject class="text-primary">Node-RED Project</h4>
+  <h4 #cloudComputingProject class="text-primary">Cloud Computing Project</h4>
   <table class="table table-hover">
     <tr class="table-active">
       <th scope="col" colspan="4" style="text-align: center">
@@ -249,15 +333,19 @@
     </tr>
     <tbody>
       <tr>
-        <th scope="row">Adward</th>
-        <td colspan="3"><i>Best project of the course</i></td>
-      </tr>
-      <tr>
         <th scope="row">Background</th>
         <td colspan="3">
-          This is a project under the subject: "Could Computing" in my master's
+          This is a project under the subject: "Cloud Computing" in my master's
           course.
         </td>
+      </tr>
+      <tr>
+        <th scope="row">Adward</th>
+        <td colspan="">
+          <i class="text-warning">Best project of the course</i>
+        </td>
+        <th scope="row">Grade</th>
+        <td colspan="">High Distinction</td>
       </tr>
       <tr>
         <th scope="row">Project Objectives</th>
@@ -319,20 +407,25 @@
         </td>
       </tr>
       <tr>
+        <th scope="row">Technologies and Services Used</th>
+        <td colspan="3">
+          <ul>
+            <li>
+              IBM Cloud Services: IBM Cloud Foundry, IBM Cloud Object Storage,
+              IBM Watson Assistant
+            </li>
+            <li>Node-RED (flow-based programming tool) and its palette</li>
+            <li>Angular</li>
+            <li>Nectar cloud instance</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
         <th scope="row">Application Overview</th>
         <td colspan="3">
           <img
             src="./../../../assets/Images/Projects/Node-RED/Node-RED_Overview.png"
             alt="Node-RED Project Application Overview"
-          />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Tools and Services Used</th>
-        <td colspan="3">
-          <img
-            src="./../../../assets/Images/Projects/Node-RED/Node-RED_Tools_and_services_used.PNG"
-            alt="Node-RED Project Tools and Services Used"
           />
         </td>
       </tr>
@@ -343,11 +436,10 @@
           <ul>
             <li>Propose ideas and outline system requirements</li>
             <li>Plan and manage project progress</li>
-            <li>Design database and prepare data</li>
+            <li>Design the whole system, design database and prepare data</li>
             <li>Implement client website</li>
             <li>Support other team members in implementing their parts</li>
             <li>Integrate the whole system</li>
-            <li>Documentation</li>
           </ul>
         </td>
       </tr>
@@ -363,23 +455,371 @@
         <th scope="row">Final Product Demo</th>
         <td colspan="3">
           <video width="70%" controls>
-            <source src="./../../../assets/videos/Node-RED_project_demo.mp4" type="video/mp4">
+            <source
+              src="./../../../assets/videos/Node-RED_project_demo.mp4"
+              type="video/mp4"
+            />
           </video>
         </td>
       </tr>
     </tbody>
   </table>
-  <h3 #project3>Project 3</h3>
 
-  <p>
-    Applied cutting-edge Computer Vision research to improve personalization and
-    image-based recommendations. Applied cutting-edge Computer Vision research
-    to improve personalization and image-based recommendations.Applied
-    cutting-edge Computer Vision research to improve personalization and
-    image-based recommendations.Applied cutting-edge Computer Vision research to
-    improve personalization and image-based recommendations.Applied cutting-edge
-    Computer Vision research to improve personalization and image-based
-    recommendations.Applied cutting-edge Computer Vision research to improve
-    personalization and image-based recommendations.
-  </p>
+  <br />
+  <h3 #dataAnalysisProject class="text-primary">Data Analysis Project</h3>
+  <table class="table table-hover">
+    <tr class="table-active">
+      <th scope="col" colspan="4" style="text-align: center">
+        Project Overview
+      </th>
+    </tr>
+    <tbody>
+      <tr>
+        <th scope="row">Background</th>
+        <td colspan="3">
+          This is a project under the subject: "Data Engineering" in my master's
+          course.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Grade</th>
+        <td colspan="3">High Distinction</td>
+      </tr>
+      <tr>
+        <th scope="row">Project Requirements</th>
+        <td colspan="3">
+          Collect data on a specific topic from the Twitter API or Reddit and
+          perform some analysis on the collected data.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Team Size</th>
+        <td>3 people</td>
+        <th scope="row">Duration</th>
+        <td>6 weeks (Effort: ~10h / week / person)</td>
+      </tr>
+      <tr>
+        <th scope="row">Our team solution</th>
+        <td colspan="3">
+          <ol>
+            <li>
+              Use R to collect ~28k tweets including the hashtag "#web" from
+              Twitter API
+            </li>
+            <li>
+              Clean data: Remove special characters, words less than 3
+              characters, hashtags, tagged accounts, English stop words, links,
+              emoji
+            </li>
+            <li>
+              Pre-process data: split into words, convert to required data type
+            </li>
+            <li>
+              Perform 10 different types of data analysis ranging from simple to
+              complex
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Technologies Used</th>
+        <td colspan="3">
+          R (a good programming language for data analysis and data
+          visualisation)
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">My contribution to the project</th>
+        <td colspan="3">
+          <p>I was a key player from idea to implementation:</p>
+          <ul>
+            <li>Propose ideas and outline the solution</li>
+            <li>Plan and manage project progress</li>
+            <li>Collect and pre-process data</li>
+            <li>
+              Perform the three most complex data analysis in the project:
+              co-occurrence network, clustering and topic modelling
+            </li>
+            <li>Support other team members in implementing their parts</li>
+            <li>Integrate the whole solution</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Source code</th>
+        <td colspan="3">
+          <p class="text-danger">
+            Cannot be made public due to the integrity of the master's course
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="text-primary">Some pictures of the final result:</h5>
+  <ul>
+    <li>
+      <p class="text-info">Visualise top 10 popular hashtags</p>
+      <img
+        src="./../../../assets/Images/Projects/DAProject/DAProject_top_10_popular_hashtags.PNG"
+        alt="Data Analysis Project - Top 10 popular hashtags"
+      />
+    </li>
+    <li>
+      <p class="text-info">Sentiments Analysis</p>
+      <img
+        src="./../../../assets/Images/Projects/DAProject/DAProject_Sentiments_analysis.PNG"
+        alt="Data Analysis Project - Sentiments Analysis"
+      />
+    </li>
+    <li>
+      <p class="text-info">Co-occurence Network Analysis</p>
+      <img
+        src="./../../../assets/Images/Projects/DAProject/DAProject_co-occurence_analysis.PNG"
+        alt="Data Analysis Project - Co-occurence Network Analysis"
+      />
+    </li>
+    <li>
+      <p class="text-info">
+        Find the best number of topics from tweet contents
+      </p>
+      <img
+        src="./../../../assets/Images/Projects/DAProject/DAProject_Find_Number_of_topics.PNG"
+        alt="Data Analysis Project - Find the best number of topics from tweet contents"
+      />
+    </li>
+    <li>
+      <p class="text-info">Topic modelling</p>
+      <img
+        src="./../../../assets/Images/Projects/DAProject/DAProject_Topic_Modelling.PNG"
+        alt="Data Analysis Project - Topic modelling"
+      />
+    </li>
+  </ul>
+
+  <br />
+  <h3 #adminSiteProject class="text-primary">Admin Website Project</h3>
+  <table class="table table-hover">
+    <tr class="table-active">
+      <th scope="col" colspan="4" style="text-align: center">
+        Project Overview
+      </th>
+    </tr>
+    <tbody>
+      <tr>
+        <th scope="row">Background</th>
+        <td colspan="3">
+          This is a project under the subject: "Web-based Systems Development"
+          in my master's course.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Grade</th>
+        <td colspan="3">High Distinction</td>
+      </tr>
+      <tr>
+        <th scope="row">Project Requirements</th>
+        <td colspan="3">
+          Use technologies introduced in the course to develop a content
+          management website where admins and managers can perform different
+          activities.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Team Size</th>
+        <td>5 people</td>
+        <th scope="row">Duration</th>
+        <td>6 weeks (Effort: ~10h / week / person)</td>
+      </tr>
+      <tr>
+        <th scope="row">Technologies Used</th>
+        <td colspan="3">
+          <ul>
+            <li>HTML, CSS, Javascript, PHP and MySQL database</li>
+            <li>The use of framework was not allowed.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Tools Used</th>
+        <td colspan="3">
+          <ul>
+            <li>
+              XAMPP (free and open-source web server solution stack package
+              developed by Apache Friends)
+            </li>
+            <li>Github</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Our team solution</th>
+        <td colspan="3">
+          <p>
+            Develop an admin site for a kitchenware store with main Use Case as
+            in the below picture
+          </p>
+          <img
+            src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_use_case.PNG"
+            alt="Kinchenware CMS main Use Case Diagram"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">My contribution to the project</th>
+        <td colspan="3">
+          <p>I was a key player from idea to implementation:</p>
+          <ul>
+            <li>Propose ideas and outline the solution</li>
+            <li>Plan and manage project progress</li>
+            <li>Design and create database and test data</li>
+            <li>
+              Implement functions: Login/Logout, Logs, add Product and commonly
+              used functions
+            </li>
+            <li>Support other team members in implementing their parts</li>
+            <li>Integrate the whole system</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Source code</th>
+        <td colspan="3">
+          <p class="text-danger">
+            Cannot be made public due to the integrity of the master's course
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="text-primary">Some pictures of the final result:</h5>
+  <ul>
+    <li>
+      <p class="text-info">Sitemap</p>
+      <img
+        src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_site_map.PNG"
+        alt="Admin website Project - Sitemap"
+      />
+    </li>
+    <li>
+      <p class="text-info">Login page</p>
+      <img
+        src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_Login_page.PNG"
+        alt="Admin website Project - Login page"
+      />
+    </li>
+    <li>
+      <p class="text-info">Admin Dashboard</p>
+      <img
+        src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_Admin_Dashboard.PNG"
+        alt="Admin website Project - Admin Dashboard"
+      />
+    </li>
+    <li>
+      <p class="text-info">Manager Dashboard</p>
+      <img
+        src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_Manager_Dashboard.PNG"
+        alt="Admin website Project - Manager Dashboard"
+      />
+    </li>
+    <li>
+      <p class="text-info">Add new product</p>
+      <img
+        src="./../../../assets/Images/Projects/AdminSite/AdminSiteProject_Add_New_Product.PNG"
+        alt="Admin website Project - Add new product"
+      />
+    </li>
+  </ul>
+
+  <br />
+  <h3 #unitTestProject class="text-primary">Unit Test Project</h3>
+  <table class="table table-hover">
+    <tr class="table-active">
+      <th scope="col" colspan="4" style="text-align: center">
+        Project Overview
+      </th>
+    </tr>
+    <tbody>
+      <tr>
+        <th scope="row">Background</th>
+        <td colspan="3">
+          This is a project under the subject: "Application Development" in my
+          master's course.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Grade</th>
+        <td>High Distinction</td>
+        <th scope="row">Important point</th>
+        <td>
+          <p class="text-warning">
+            Our Unit Test Coverage Rate was very high (>97%)
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Project Requirements</th>
+        <td colspan="3">
+          <ul>
+            <li>
+              Develop a command line application that can parse data from a file
+              including data from YouTube API, process and find Trending Topics
+            </li>
+            <li><p class="text-info">Perform JUnit Test for the project</p></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Team Size</th>
+        <td>2 people</td>
+        <th scope="row">Duration</th>
+        <td>4 weeks (Effort: ~10h / week / person)</td>
+      </tr>
+      <tr>
+        <th scope="row">Technologies and Tools Used</th>
+        <td colspan="3">Java, JUnit Test, SVN (subversion management tool)</td>
+      </tr>
+      <tr>
+        <th scope="row">My contribution to the project</th>
+        <td colspan="3">
+          <ul>
+            <li>Contribute ideas for the solution</li>
+            <li>
+              Refactor the source code developed by my teammate and add more
+              code to handle error and exception cases
+            </li>
+            <li>Prepare test data</li>
+            <li>Write JUnit Test script</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Source code</th>
+        <td colspan="3">
+          <p class="text-danger">
+            Cannot be made public due to the integrity of the master's course
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="text-primary">Some pictures of the final result:</h5>
+  <ul>
+    <li>
+      <p class="text-info">Program main menu</p>
+      <img
+        src="./../../../assets/Images/Projects/UTest/YouTubeTrend_main_menu.PNG"
+        alt="Data Analysis Project - Program main menu"
+        class="img-50"
+      />
+    </li>
+    <li>
+      <p class="text-info">Unit Test Coverage</p>
+      <img
+        src="./../../../assets/Images/Projects/UTest/UTest_coverage_rate.PNG"
+        alt="Data Analysis Project - Unit Test Coverage"
+        class="img-80"
+      />
+    </li>
+  </ul>
+  <br /><br /><br /><br /><br /><br /><br />
 </div>

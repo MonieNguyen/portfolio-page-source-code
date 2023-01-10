@@ -1,42 +1,45 @@
 .split {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .left {
-    left: 0;
-    width: 15%;
-    background-color: rgb(230, 252, 240);
-  }
-  
-  .right {
-    right: 0;
-    width: 85%;
-    padding-left: 20px;
-  }
-  
-  .side-link {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  .project-link {
-    &.active {
-      font-weight: bold;
-    }
-  }
-  
-  .img-50 {
-    width: 50%;
-  }
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-  .img-80 {
-    width: 80%;
-  }
+.left {
+  left: 0;
+  width: 15%;
+  background-color: rgb(230, 252, 240);
+}
 
-  .img-150 {
-    width: 150%;
+.right {
+  right: 0;
+  width: 85%;
+  padding-left: 20px;
+}
+
+.side-link {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.project-link {
+  &:hover {
+    text-decoration: none;
   }
+  &:active {
+    font-weight: bold;
+  }
+}
+
+.img-50 {
+  width: 50%;
+}
+
+.img-80 {
+  width: 80%;
+}
+
+.img-150 {
+  width: 150%;
+}
