@@ -2,7 +2,7 @@
 
 This is the source code of a portfolio page generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.  
 
-Code is live at the [Thi Huong Nguyen's Portfolio](https://thihuongnguyen.github.io/)
+Code is live at the [Monie Nguyen's Portfolio](https://monienguyen.github.io/)
 
 ## Development server
 
