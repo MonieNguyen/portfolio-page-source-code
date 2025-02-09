@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "protgolio-page": {
+    "portfolio-page": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/protgolio-page",
+            "outputPath": "dist/portfolio-page",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "protgolio-page:build:production"
+              "browserTarget": "portfolio-page:build:production"
             },
             "development": {
-              "browserTarget": "protgolio-page:build:development"
+              "browserTarget": "portfolio-page:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "protgolio-page:build"
+            "browserTarget": "portfolio-page:build"
           }
         },
         "test": {

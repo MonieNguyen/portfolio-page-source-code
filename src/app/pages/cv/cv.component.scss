@@ -1,20 +1,25 @@
 table {
-    width: 100%;
-    table-layout: auto;
+  width: 100%;
+  table-layout: auto;
+
+  .table-sub-title {
+    padding-top: 15px;
+  }
 }
+
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-align-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .fit-content {
-    width: 1px;
-    white-space: nowrap;
+  width: 1px;
+  white-space: nowrap;
 }
